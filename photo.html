@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Барбершоп «Бородинский»</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo page-header__logo--photo" href="index.html">
+      <picture>
+        <source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
+        <source srcset="img/logotype-tablet.svg" media="(min-width: 768px) and (max-width: 1999px)">
+        <source srcset="img/logotype-mobile.svg" media="(max-width: 767px)">
+        <img src="img/logotype-desktop.svg" alt="Барбершоп Бородинский">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item ">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Наши работы</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Записаться</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">
+              <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
+                <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" /></svg>
+              Войти
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="our-works">
+      <div class="our-works__wrapper">
+        <h1 class="our-works__title">Наши работы</h1>
+        <a class="our-works__main-page button" href="#">На главную</a>
+        <div class="our-works__list">
+          <blockquote class="our-works__item">
+            <span class="our-works__best">Работа месяца</span>
+            <div class="our-works__client-picture our-works__client-picture--best">
+              <img class="our-works__client-image our-works__client-image--best" src="img/photo-1-desktop.jpg" width="480px" height="480px"
+                alt="Фото клиента">
+            </div>
+            <div class="our-works__client-info our-works__client-info--best">
+              <cite class="our-works__client-name">Лжепётр Мчиславский</cite>
+              <p class="our-works__client-review">Где я только не стригся, но так как делаете это вы — не умеет никто другой!
+                Еще раз спасибо и до скорого!</p>
+              <div class="our-works__services">
+                <span class="our-works__service  our-works__service--haircut">Стрижка</span>
+                <span class="our-works__service  our-works__service--shaving">Бритье</span>
+                <span class="our-works__service  our-works__service--mustache">Усы</span>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="our-works__item">
+            <div class="our-works__client-picture">
+              <img class="our-works__client-image" src="img/photo-2-desktop.jpg" alt="Фото клиента">
+            </div>
+            <div class="our-works__client-info">
+              <cite class="our-works__client-name">Саша Мальцев</cite>
+              <p class="our-works__client-review">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+              <div class="our-works__services">
+                <span class="our-works__service our-works__service--haircut">Стрижка</span>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="our-works__item">
+            <div class="our-works__client-picture">
+              <img class="our-works__client-image" src="img/photo-3-desktop.jpg" alt="Фото клиента">
+            </div>
+            <div class="our-works__client-info">
+              <cite class="our-works__client-name">Владимир Иваныч</cite>
+              <p class="our-works__client-review">К зимнему сезону — готов!</p>
+              <div class="our-works__services">
+                <span class="our-works__service our-works__service--shaving">Бритье</span>
+                <span class="our-works__service our-works__service--mustache">Усы</span>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="our-works__item">
+            <div class="our-works__client-picture">
+              <img class="our-works__client-image" src="img/photo-4-desktop.jpg" alt="Фото клиента">
+            </div>
+            <div class="our-works__client-info">
+              <cite class="our-works__client-name">Винстон Синий</cite>
+              <p class="our-works__client-review">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+              <div class="our-works__services">
+                <span class="our-works__service our-works__service--haircut">Стрижка</span>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-list">
+      <div class="price-list__wrapper">
+        <h2 class="price-list__tittle">ПРЕЙСКУРАНТ</h2>
+        <div class="price-list__container">
+          <table class="price-list__table">
+            <tr class="price-list__row">
+              <td class="price-list__number">
+                1
+              </td>
+              <td class="price-list__service-name">
+                Классическая стрижка
+              </td>
+              <td class="price-list__include">
+                <span class="price-list--hidden">(</span>с мытьём головы<span class="price-list--hidden">)</span>
+              </td>
+              <td class="price-list__price">
+                1 500 руб.
+              </td>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__number">
+                2
+              </td>
+              <td class="price-list__service-name">
+                Современный вариант
+              </td>
+              <td class="price-list__include">
+                <span class="price-list--hidden">(</span>с мытьём головы<span class="price-list--hidden">)</span>
+              </td>
+              <td class="price-list__price">
+                1 500 руб.
+              </td>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__number">
+                3
+              </td>
+              <td class="price-list__service-name">
+                Индивидуальный подход
+              </td>
+              <td class="price-list__include">
+                <span class="price-list--hidden">(</span>с мытьём головы<span class="price-list--hidden">)</span>
+              </td>
+              <td class="price-list__price">
+                2 000 руб.
+              </td>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__number">
+                4
+              </td>
+              <td class="price-list__service-name">
+                Бритьё бороды
+              </td>
+              <td class="price-list__include">
+                <span class="price-list--hidden">(</span>без мытья<span class="price-list--hidden">)</span>
+              </td>
+              <td class="price-list__price">
+                500 руб.
+              </td>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__number">
+                5
+              </td>
+              <td class="price-list__service-name">
+                Бритьё головы
+              </td>
+              <td class="price-list__include">
+                <span class="price-list--hidden">(</span>с мытьём головы<span class="price-list--hidden">)</span>
+              </td>
+              <td class="price-list__price">
+                1 000 руб.
+              </td>
+            </tr>
+          </table>
+
+          <div class="price-list__discount">
+            <p class="price-list__time">C 10:00 до 14:00 скидка 20%</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп «Бородинский»</b>
+        <p class="contacts__text">
+          г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+          </a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
