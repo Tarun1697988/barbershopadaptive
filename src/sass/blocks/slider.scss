@@ -1,0 +1,22 @@
+.slider__toggles {
+    display: flex;
+    width: 80px;
+    margin: 0 auto;
+
+    justify-content: space-between;
+}
+
+.slider__toggle {
+    
+    width: 10px;
+    height: 10px;
+    padding: 0;
+   
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    transform: rotate(45deg);
+
+    &--active {
+        background-color: #ffffff;
+    }
+}

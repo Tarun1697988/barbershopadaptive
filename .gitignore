@@ -1,0 +1,14 @@
+.DS_Store
+*.ai
+*.log
+*.pdf
+*.psd
+*.rar
+*.zip
+*.sublime-*
+.idea
+.publish
+ex_files
+Thumbs.db
+__MACOSX
+node_modules/

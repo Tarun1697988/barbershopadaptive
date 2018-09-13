@@ -1,0 +1,125 @@
+.beard-model {
+  border: none;
+}
+
+.beard-model__tittle {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.beard-model__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.beard-model__item {
+  width: 70px;
+  padding-top: 70px;
+  padding-bottom: 120px;
+
+  text-align: center;
+  &--admiral {
+    background-image: url("../img/beard-1.svg");
+    background-repeat: no-repeat;
+    background-position: center 100px;
+  }
+  &--lumberjack {
+    background-image: url("../img/beard-2.svg");
+    background-repeat: no-repeat;
+    background-position: center 100px;
+  }
+  &--polar-explorer {
+    background-image: url("../img/beard-3.svg");
+    background-repeat: no-repeat;
+    background-position: center 100px;
+  }
+  &--boyar {
+    background-image: url("../img/beard-4.svg");
+    background-repeat: no-repeat;
+    background-position: center 100px;
+  }
+  &--sage {
+    background-image: url("../img/beard-5.svg");
+    background-repeat: no-repeat;
+    background-position: center 100px;
+  }
+}
+
+.beard-model__label {
+  position: relative;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 50%;
+
+    width: 52px;
+    height: 52px;
+
+    background-color: #ffffff;
+    border: 1px solid #e5ddd5;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    transition: border-color 0.1s linear, box-shadow 0.1s linear;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -49px;
+    left: 50%;
+    z-index: 2;
+
+    display: none;
+    width: 20px;
+    height: 20px;
+
+    background-color: #ffffff;
+    border: 1px solid #e5ddd5;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:hover::before {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active::before {
+    background-color: #d5c9bd;
+  }
+}
+
+.beard-model__radio:checked + .beard-model__label::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .beard-model {
+    border-top: 1px solid #e5ddd5;
+  }
+  .beard-model__tittle {
+    margin-bottom: 45px;
+    padding: 0 35px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

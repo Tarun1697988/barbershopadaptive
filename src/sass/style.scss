@@ -1,0 +1,33 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "normalize.scss";
+
+@import "global/fonts.scss";
+@import "global/scaffolding.scss";
+@import "blocks/slider.scss";
+@import "blocks/button.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+
+@import "blocks/stats.scss";
+@import "blocks/advantages.scss";
+@import "blocks/news.scss";
+@import "blocks/reviews.scss";
+
+@import "blocks/page-footer";
+@import "blocks/contacts";
+@import "blocks/social";
+@import "blocks/copyright.scss";
+
+@import "blocks/our-works.scss";
+@import "blocks/price-list.scss";
+
+@import "blocks/record.scss";
+@import "blocks/form.scss";
+@import "blocks/beard-model.scss";
+@import "blocks/additional-services.scss";
+
+

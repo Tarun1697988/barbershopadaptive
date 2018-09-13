@@ -1,0 +1,102 @@
+.additional-services__tittle {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.additional-services__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.additional-services__item {
+  padding-left: 60px;
+  margin-bottom: 35px;
+
+  
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.additional-services__label {
+  position: relative;
+  font-weight: 700;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -60px;
+
+    width: 36px;
+    height: 36px;
+
+    background-color: #ffffff;
+    border: 1px solid #e5ddd5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -50px;
+    z-index: 2;
+    
+    width: 22px;
+    height: 16px;
+    display: none;
+
+    background-image: url("../img/checkbox-on.png");
+    background-repeat: no-repeat;
+    
+  }
+
+  &:hover::before {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active::before {
+    background-color: #d5c9bd;
+  }
+}
+
+.additional-services__checkox:checked + .additional-services__label::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-services {
+    border-top: 1px solid #e5ddd5;
+  }
+  .additional-services__tittle {
+    margin-bottom: 45px;
+    padding: 0 35px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .additional-services__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-services__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-services__item {
+    width:25%;
+  }
+}
